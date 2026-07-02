@@ -4,3 +4,4 @@ systemctl list-unit-files --type=service --state=enabled | grep "enabled" | grep
 systemctl list-unit-files --type=service --state=enabled | grep "enabled" | grep "radicale"
 systemctl list-unit-files --type=service --state=enabled | grep "enabled" | grep "sftpgo"
 systemctl list-unit-files --type=service --state=enabled | grep "enabled" | grep "ufw"
+free -h
