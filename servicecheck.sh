@@ -13,3 +13,8 @@ echo vncserver
 systemctl status tigervncserver@:1 | grep "enabled"
 echo ________________________________________
 free -h
+systemctl status sddm | grep "enabled"
+systemctl status forgejo | grep "enabled"
+systemctl status radicale | grep "enabled"
+systemctl status sftpgo | grep "enabled"
+systemctl status ufw | grep "enabled"
