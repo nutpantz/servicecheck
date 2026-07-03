@@ -10,6 +10,6 @@ systemctl list-unit-files --type=service --state=enabled | grep "enabled" | grep
 echo ufw
 systemctl list-unit-files --type=service --state=enabled | grep "enabled" | grep "ufw"
 echo vncserver
-ps -ef | grep x0vncserver
+systemctl status tigervncserver@:1 | grep "enabled"
 echo ________________________________________
 free -h
