@@ -1,20 +1,20 @@
 #!/bin/sh
 echo sddm    
-systemctl list-unit-files --type=service --state=enabled | grep "enabled" | grep "sddm"
+systemctl list-unit-files --type=service --state=enabled | grep "active" | grep "sddm"
 echo forgejo
-systemctl list-unit-files --type=service --state=enabled | grep "enabled" | grep "forgejo"
+systemctl list-unit-files --type=service --state=enabled | grep "active"" | grep "forgejo"
 echo radicle
-systemctl list-unit-files --type=service --state=enabled | grep "enabled" | grep "radicale"
+systemctl list-unit-files --type=service --state=enabled | grep "active"" | grep "radicale"
 echo sftpgo
-systemctl list-unit-files --type=service --state=enabled | grep "enabled" | grep "sftpgo"
+systemctl list-unit-files --type=service --state=enabled | grep "active"" | grep "sftpgo"
 echo ufw
-systemctl list-unit-files --type=service --state=enabled | grep "enabled" | grep "ufw"
+systemctl list-unit-files --type=service --state=enabled | grep "active"" | grep "ufw"
 echo vncserver
 systemctl status tigervncserver@:1 | grep "enabled"
 echo ________________________________________
 free -h
-systemctl status sddm | grep "enabled"
-systemctl status forgejo | grep "enabled"
-systemctl status radicale | grep "enabled"
-systemctl status sftpgo | grep "enabled"
-systemctl status ufw | grep "enabled"
+systemctl status sddm | grep "active""
+systemctl status forgejo | grep "active""
+systemctl status radicale | grep "active""
+systemctl status sftpgo | grep "active""
+systemctl status ufw | grep "active""
